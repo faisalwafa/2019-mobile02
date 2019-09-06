@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
 	//  TODO: deklarasikan variabel di sini
 	private EditText number_input;
-	private int n,convertNumber;
+	private int n;
 	private Random rand;
 	private Button guess_button;
 
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 		if (num.equalsIgnoreCase("")) {
 			Toast.makeText(this, "Harap Mengisi Angka!!", Toast.LENGTH_SHORT).show();
 		}else {
-			convertNumber = Integer.parseInt(num);
+			int convertNumber = Integer.parseInt(num);
 			if (convertNumber == n){
 				Toast.makeText(this, "Tebakan anda benar!",Toast.LENGTH_SHORT).show();
 				guess_button.setEnabled(false);
